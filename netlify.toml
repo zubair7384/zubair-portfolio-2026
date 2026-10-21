@@ -1,8 +1,10 @@
-# Static site: no build step. Netlify serves 404.html for unknown paths.
+# Static site: nothing to compile, the build just copies the site into dist/.
+# Netlify serves 404.html for unknown paths.
+# dist/ matches the publish directory the old Vite site set in the Netlify UI.
+# Add any new top-level file or folder to the copy list below.
 [build]
-  publish = "."
-  # Overrides any build command set in the Netlify UI (the old Vite site used `npm run build`).
-  command = "echo 'No build step'"
+  publish = "dist"
+  command = "rm -rf dist && mkdir dist && cp -R index.html 404.html robots.txt sitemap.xml site.webmanifest assets css js vendor dist/"
 
 [[headers]]
   for = "/assets/*"
