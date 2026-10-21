@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="100 47 858 858" fill="#0f0f0e">
+  <path id="b" d="M125 57H502A15 15 0 0 1 517 72V245A90 90 0 0 0 670.6 308.6L684 321L520 485L496 482A10 10 0 0 1 488.9 465H125A15 15 0 0 1 110 450V72A15 15 0 0 1 125 57Z"/>
+  <use href="#b" transform="rotate(180 529 476)"/>
+  <path d="M138 867L920 85" stroke="#0f0f0e" stroke-width="38" stroke-linecap="round"/>
+</svg>
